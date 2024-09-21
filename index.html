@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cinema 0451</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Media/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="Scripts/unity.js" defer></script>
+    <script src="Scripts/scroller.js" defer></script>
+    <script src="Scripts/search.js" defer></script>
+</head>
+<body>
+    <video class="backdrop" src="Media/artdeco.webm" playsinline="" autoplay="" muted="" loop="" aria-hidden="true"></video>
+
+    <header class="header | content_column">
+        <h1 class="header__title"><span class="drop_cap">C</span>inema 045<span class="drop_cap">1</span></h1>
+        <p class="header__subtitle">
+            Showcasing items from the National Film and Sound Archive
+            with a focus on vintage cinema.
+        </p>
+    </header>
+
+    <main class="main | content_column">
+
+        <section class="section">
+            <h2 class="section__title | visually_hidden">Virtual exhibit</h2>
+
+            <div id="unity-container" class="unity-desktop">
+                <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+                <button id="unity-load-button">Experience the virtual exhibit</button>
+
+                <div id="unity-loading-bar">
+                    <div id="unity-logo"></div>
+                    <div id="unity-progress-bar-empty">
+                        <div id="unity-progress-bar-full"></div>
+                    </div>
+                </div>
+
+                <div id="unity-warning"> </div>
+
+                <div id="unity-footer">
+                    <button id="unity-quit-button">Exit the virtual exhibit</button>
+                    <button id="unity-fullscreen-button"><span class="visually_hidden">Enter Fullscreen</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Featured Australian Films</h2>
+
+            <div class="featured_film">
+                <img class="featured_film__image" src="Media/wake_in_fright.jpg" alt="Cast in orange tones, it features an illustration of four men and a woman waiting on a railway platform, holding beer cans and guns. Superimposed above them is John Grant carrying a suitcase and gun. The tagline reads: 'Outback. Have a drink, mate? Have a fight, mate? Have a taste of dust and sweat, mate? There's nothing else out here.'">
+                <article class="featured_film__article">
+                    <h3 class="featured_film__title">Wake In Fright</h3>
+                    <p class="featured_film__paragraph">
+                        Wake in Fright is a classic from the early days of the 1970s Australian film renaissance. First released in 1971, the film was restored by the NFSA and re-released in 2009.
+                        It had been thought lost for decades until the film's editor, Anthony Buckley, located the original negatives in Pittsburgh, USA where they were marked 'for destruction'.
+                        </p>
+                    <p class="featured_film__paragraph">
+                        Wake in Fright starred British actors Gary Bond, Donald Pleasence and Sylvia Kay but was notable for being both the first film for Jack Thompson and the last for Chips Rafferty.
+                        It is also one of only two films to ever be selected for the Cannes Film Festival twice – in 1971, for the Official Competition, and then in 2009 when the restoration screened as part of Cannes Classics.
+                    </p>
+                    <p class="featured_film__paragraph">
+                        Based on the novel by Kenneth Cook and directed by Canadian-born Ted Kotcheff, it is about a young schoolteacher who finds himself stranded in an outback mining town. Over the course of a few days, he loses his money, inhibitions, self-respect – and almost his life.
+                        This collection features materials relating to the film's original release in 1971 and its restoration nearly 40 years later, including memories from director Ted Kotcheff and others who worked on it; clips from the film; trailers; international film posters and the story behind an unusual prop.
+                    </p>
+                    <a class="featured_film__link" href="https://www.nfsa.gov.au/collection/curated/wake-fright-classic-australian-film-restored-nfsa" target="_blank">View this collection</a>
+                </article>
+            </div>
+
+            <div class="featured_film">
+                <img class="featured_film__image" src="Media/snowy_river.jpg" alt="An Australian daybill poster for The Man from Snowy River, from its original cinema release in March 1982. It features a montage of images that sum up the key moments from the film: the romance between Jim (Tom Burlinson) and Jessica (Sigrid Thornton), Jack Thompson with a stockwhip, Kirk Douglas with a beard and bush hat in one of the two roles he plays, and a group of men on horses riding towards the camera.">
+                <article class="featured_film__article">
+                    <h3 class="featured_film__title">The Man From Snowy River</h3>
+                    <p class="featured_film__paragraph">
+                        'There was movement at the station, for the word had passed around | That the colt from old Regret had got away...'
+                    </p>
+                    <p class="featured_film__paragraph">
+                        Based on Banjo Paterson's poem of the same name, The Man from Snowy River was a huge hit with audiences in Australia and very well-received overseas.
+                    </p>
+                    <p class="featured_film__paragraph">
+                        The film combined an Australian western with a stirring melodrama and period romance, set against a rugged mountain backdrop of wild horses and beautiful landscapes.
+                    </p>
+                    <p class="featured_film__paragraph">
+                        This collection includes clips, images and posters from the film; an extensive interview with the cast on The Mike Walsh Show in 1982; on-set reports of the making of the film; and an audio interview clip with producer Geoff Burrowes and director George Miller.
+                    </p>
+                    <a class="featured_film__link" href="https://www.nfsa.gov.au/collection/curated/man-snowy-river" target="_blank">View this collection</a>
+                </article>
+            </div>
+
+            <div class="featured_film">
+                <img class="featured_film__image" src="Media/crocodile_dundee.jpg" loading="lazy" alt="An Australian one-sheet poster for Crocodile Dundee featuring a muscular man in a cowboy hat, holding a large knife and smiling confidently, with a woman standing behind him. A large crocodile is also shown, emerging from the bottom. In the background, there’s the Statue of Liberty on the left and a sunset with a city skyline." >
+                <article class="featured_film__article">
+                    <h3 class="featured_film__title">Crocodile Dundee</h3>
+                    <p class="featured_film__paragraph">
+                        Crocodile Dundee remains the most commercially successful Australian film ever made, with Paul Hogan’s iconic Mick Dundee at the heart of the film. 
+                    </p>
+                    <p class="featured_film__paragraph">
+                        It opened in Australian cinemas on 24 April 1986 and has gone on to be one of the most successful non-Hollywood films of all time.
+                    </p>
+                    <p class="featured_film__paragraph">
+                        Crocodile Dundee II, made three years after the first film, gives loveable larrikin Mick Dundee more chances to get himself into (and out of) trouble. This time drug barons are after his journalist girlfriend Sue Charlton (Linda Kozlowski).
+                    </p>
+                    <a class="featured_film__link" href="https://www.nfsa.gov.au/collection/curated/crocodile-dundee" target="_blank">View this collection</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Search the full collection</h2>
+
+            <div class="scroller">
+                <div class="scroller__inner">
+                  <img class="scroller__image" src="Media/1.jpg" alt="On The Beach">
+                  <img class="scroller__image" src="Media/2.jpg" alt="Botany Bay">
+                  <img class="scroller__image" src="Media/3.jpg" alt="Alexander The Great">
+                  <img class="scroller__image" src="Media/4.jpg" alt="The Birds">
+                  <img class="scroller__image" src="Media/5.jpg" alt="Do Not Disturb">
+                  <img class="scroller__image" src="Media/6.jpg" alt="The Master Of Ballantrae">
+                  <img class="scroller__image" src="Media/7.jpg" alt="Some Like It Hot">
+                  <img class="scroller__image" src="Media/8.jpg" alt="Hondo">
+                  <img class="scroller__image" src="Media/9.jpg" alt="Passage Home">
+                  <img class="scroller__image" src="Media/10.jpg" alt="To Catch A Thief">
+                  <img class="scroller__image" src="Media/11.jpg" alt="The Innocents">
+                  <img class="scroller__image" src="Media/12.jpg" alt="Limelight">
+                  <img class="scroller__image" src="Media/13.jpg" alt="The Long Arm">
+                  <img class="scroller__image" src="Media/14.jpg" alt="No Love For Johnnie">
+                </div>
+              </div>
+
+            <div class="collection_search">
+                <form class="collection_search__form">
+                    <input class="collection_search__input" type="text" placeholder="Search the collection">
+                    <button class="collection_search__button" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
