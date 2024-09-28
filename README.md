@@ -9,7 +9,7 @@ My web application is an exhibit called ‘Cinema 0451’ which features a handf
 
 Art Deco was an art movement that became popular in the 1920s and 1930s, coinciding with the popularization of cinema. The design of art deco reflected the luxury, modernity, and faith in technological progress of the time and featured streamlined forms, stylized patterns, bold colors, and luxurious materials. Art deco and cinema share an intertwined history as the movement influenced the aesthetics of film production as well as the architecture and decoration of movie theaters.
 The overall theme of the Cinema 0451 webpage is inspired by the art deco style to compliment the vintage cinema content.
-/
+\
 **Typography:** The webpage features three fonts:
 Limelight - used for headings
 Poppins - used for text
@@ -17,9 +17,9 @@ Poiret One - used as an accent font for buttons
 
 My design features the fairly standard visual hierarchy choice of having a more decorative font for headings to stand out and convey more personality, and a more legible and easy to read font for the body text.
 Limelight was chosen after I simply googled “Art deco google fonts”. Poppins was chosen because I was trying to find a simple sans-serif font similar to the one used in this reference image:
-/
 ![maxresdefault](https://github.com/user-attachments/assets/09801e6a-b5b2-415e-a915-b2fc8d206a64)
-/
+
+\
 Poiret One was chosen because I wanted to give the buttons more visual interest but Limelight was a bit too extreme.
 
 **Colors:** The color palette is kept very simple, with just black, white, and gold being used. Gold was chosen for being a very opulent art deco color. I did experiment with making the title of the webpage red with a white outline and neon glow, similar to the reference image above. However, it looked very tacky with the Limelight font and the website was looking tacky enough.
