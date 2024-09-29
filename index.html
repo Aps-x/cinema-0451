@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcasing items from the National Film and Sound Archive with a focus on vintage cinema an featuring a unique virtual exhibit.">
+    <meta name="author" content="Adam Seaton">
 
     <title>Cinema 0451</title>
 
@@ -120,28 +122,34 @@
 
             <div class="scroller">
                 <div class="scroller__inner">
-                  <img class="scroller__image" src="Media/1.jpg" alt="On The Beach">
-                  <img class="scroller__image" src="Media/2.jpg" alt="Botany Bay">
-                  <img class="scroller__image" src="Media/3.jpg" alt="Alexander The Great">
-                  <img class="scroller__image" src="Media/4.jpg" alt="The Birds">
-                  <img class="scroller__image" src="Media/5.jpg" alt="Do Not Disturb">
-                  <img class="scroller__image" src="Media/6.jpg" alt="The Master Of Ballantrae">
-                  <img class="scroller__image" src="Media/7.jpg" alt="Some Like It Hot">
-                  <img class="scroller__image" src="Media/8.jpg" alt="Hondo">
-                  <img class="scroller__image" src="Media/9.jpg" alt="Passage Home">
-                  <img class="scroller__image" src="Media/10.jpg" alt="To Catch A Thief">
-                  <img class="scroller__image" src="Media/11.jpg" alt="The Innocents">
-                  <img class="scroller__image" src="Media/12.jpg" alt="Limelight">
-                  <img class="scroller__image" src="Media/13.jpg" alt="The Long Arm">
-                  <img class="scroller__image" src="Media/14.jpg" alt="No Love For Johnnie">
+                    <img class="scroller__image" src="Media/1.jpg" alt="On The Beach">
+                    <img class="scroller__image" src="Media/2.jpg" alt="Botany Bay">
+                    <img class="scroller__image" src="Media/3.jpg" alt="Alexander The Great">
+                    <img class="scroller__image" src="Media/4.jpg" alt="The Birds">
+                    <img class="scroller__image" src="Media/5.jpg" alt="Do Not Disturb">
+                    <img class="scroller__image" src="Media/6.jpg" alt="The Master Of Ballantrae">
+                    <img class="scroller__image" src="Media/7.jpg" alt="Some Like It Hot">
+                    <img class="scroller__image" src="Media/8.jpg" alt="Hondo">
+                    <img class="scroller__image" src="Media/9.jpg" alt="Passage Home">
+                    <img class="scroller__image" src="Media/10.jpg" alt="To Catch A Thief">
+                    <img class="scroller__image" src="Media/11.jpg" alt="The Innocents">
+                    <img class="scroller__image" src="Media/12.jpg" alt="Limelight">
+                    <img class="scroller__image" src="Media/13.jpg" alt="The Long Arm">
+                    <img class="scroller__image" src="Media/14.jpg" alt="No Love For Johnnie">
                 </div>
-              </div>
+            </div>
 
             <div class="collection_search">
                 <form class="collection_search__form">
-                    <input class="collection_search__input" type="text" placeholder="Search the collection">
-                    <button class="collection_search__button" type="submit">Search</button>
+                    <input id="input" class="collection_search__input" type="text" placeholder="Search the collection">
+                    <button id="search" class="collection_search__button" type="submit">Search</button>
                 </form>
+
+                <div id="results_loader" class="loader"></div>
+
+                <ul id="results" class="collection_search__results">
+                    
+                </ul>
             </div>
         </section>
     </main>

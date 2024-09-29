@@ -11,10 +11,11 @@ Abstract
     --ff_regular: "Poppins", sans-serif;
 
     --fw_regular: 400;
+    --fw_bold: 600;
 
     --fs_regular: 1.125rem;
-    --fs_medium: 2rem;
-    --fs_semilarge: 3.25rem;
+    --fs_medium: clamp(1.25rem, 0.9891rem + 1.3043vw, 2rem);
+    --fs_semilarge: clamp(1.8rem, 1.3391rem + 2.3043vw, 3.25rem);
     --fs_large: clamp(2.4883rem, 1.2309rem + 6.2873vw, 6.1035rem);
 }
     // Sass Variables
@@ -44,7 +45,7 @@ body {
 
     background-image: url('Media/artdecopattern.png');
     background-size: 250px;
-    border-image: fill 0 linear-gradient(to bottom, #000 30%, #0003 100%);
+    border-image: fill 0 linear-gradient(to bottom, #000 125vh, #0003 min(4920px, 100%));
     @media (max-width: $breakpoint_desktop_small) {
         border-image: unset;
     }
@@ -174,6 +175,49 @@ Components
         padding: 1rem;
         min-width: 0px;
     }
+    &__results {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        list-style-type: '';
+    }
+}
+.loader {
+    margin-top: 2rem;
+    display: none;
+    width: 150px;
+    aspect-ratio: 1;
+    color: var(--clr_gold);
+    margin-inline: auto;
+    -webkit-mask: conic-gradient(from 15deg, #0003, #000);
+    mask: conic-gradient(from 15deg, #0003, #000);
+    animation: load 1s steps(12) infinite;
+    &,
+    &::before,
+    &::after {
+        background:
+        radial-gradient(circle closest-side, currentColor 90%, #0000 98%) 50% -150%/20% 80% repeat-y,
+        radial-gradient(circle closest-side, currentColor 90%, #0000 98%) -150% 50%/80% 20% repeat-x;
+
+    }
+    &::before,
+    &::after {
+        content: "";
+        grid-area: 1/1;
+        transform: rotate(30deg);
+    }
+    &::after {
+        transform: rotate(60deg);
+    }
+}
+@keyframes load {
+    from {
+        transform: rotate(0turn)
+    }
+    to {
+        transform: rotate(1turn)
+    }
 }
 /* ==========================================================================
 Page & Layout
@@ -229,6 +273,7 @@ Page & Layout
     gap: 1rem;
     &__title {
         font-size: var(--fs_medium);
+        font-weight: var(--fw_bold);
     }
     &__paragraph {
         margin-top: 0.75rem;
@@ -252,5 +297,8 @@ Page & Layout
     }
     @media (max-width: $breakpoint_desktop_small) {
         grid-template-columns: 1fr;
+        &:nth-of-type(2) &__article {
+            order: 1;
+        }
     }
 }

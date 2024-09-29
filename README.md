@@ -1,7 +1,7 @@
-# Website Rationale
+# Project 2: Web App Development 
 Website Link: https://aps-x.github.io/cinema-0451/
 
-## Rationale / Reflection
+## Rationale
 
 My web application is an exhibit called ‘Cinema 0451’ which features a handful of curated collections from the NFSA with a focus on vintage cinema. Cinema 0451 consists of two parts: the webpage and the virtual exhibit.
 
@@ -9,6 +9,7 @@ My web application is an exhibit called ‘Cinema 0451’ which features a handf
 
 Art Deco was an art movement that became popular in the 1920s and 1930s, coinciding with the popularization of cinema. The design of art deco reflected the luxury, modernity, and faith in technological progress of the time and featured streamlined forms, stylized patterns, bold colors, and luxurious materials. Art deco and cinema share an intertwined history as the movement influenced the aesthetics of film production as well as the architecture and decoration of movie theaters.
 The overall theme of the Cinema 0451 webpage is inspired by the art deco style to compliment the vintage cinema content.
+\
 \
 **Typography:** The webpage features three fonts:
 Limelight - used for headings
