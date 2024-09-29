@@ -53,20 +53,20 @@ var config = {
 // the canvas DOM size and WebGL render target sizes yourself.
 // config.matchWebGLToCanvasSize = false;
 
-if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    // Mobile device style: fill the whole browser client area with the game canvas:
+// if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+//     // Mobile device style: fill the whole browser client area with the game canvas:
 
-    var meta = document.createElement('meta');
-    meta.name = 'viewport';
-    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-    document.getElementsByTagName('head')[0].appendChild(meta);
-    container.className = "unity-mobile";
-    canvas.className = "unity-mobile";
+//     var meta = document.createElement('meta');
+//     meta.name = 'viewport';
+//     meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+//     document.getElementsByTagName('head')[0].appendChild(meta);
+//     container.className = "unity-mobile";
+//     canvas.className = "unity-mobile";
 
-    // To lower canvas resolution on mobile devices to gain some
-    // performance, uncomment the following line:
-    // config.devicePixelRatio = 1;
-}
+//     // To lower canvas resolution on mobile devices to gain some
+//     // performance, uncomment the following line:
+//     // config.devicePixelRatio = 1;
+// }
 
 var script = document.createElement("script");
 script.src = loaderUrl;
@@ -114,7 +114,8 @@ loadButton.addEventListener("click", function () {
             // Reset canvas
             const context = canvas.getContext('2d');
             context.clearRect(0, 0, canvas.width, canvas.height);
-            canvas.style.backgroundColor = "black";
+            context.fillStyle = "black";
+            context.fillRect(0, 0, canvas.width, canvas.height);
         };
 
     // ===== Error Handling ===== //
